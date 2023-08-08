@@ -10,10 +10,6 @@ terraform {
       source  = "hashicorp/random"
       version = ">= 3.0"
     }
-    snowflake = {
-      source  = "Snowflake-Labs/snowflake"
-      version = "~> 0.68"
-    }
   }
 }
 
@@ -28,8 +24,4 @@ provider "azurerm" {
       prevent_deletion_if_contains_resources = false
     }
   }
-}
-
-provider "snowflake" {
-  
 }
